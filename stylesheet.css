@@ -18,7 +18,7 @@ html{
     /* background-color: rgb(40, 105, 245); */
 }
 
-h1{
+.head{
     background-image: linear-gradient(to bottom right, white,rgba(255, 255, 255, 0.685),gray,black );
     background-size: cover;
     background-repeat:no-repeat ;

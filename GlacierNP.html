@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aladin&family=Alegreya:ital@0;1&family=Almendra&family=Almendra+SC&family=Amarante&family=Audiowide&family=Playfair+Display:ital@1&family=Poppins:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            margin: 0;
+            /* padding: 0%; */
+            box-sizing: border-box;
+        }
+
+        body {
+            /* background-image: linear-gradient(to right bottom, black, rgb(29, 28, 28), rgba(56, 53, 53, 0.91), rgb(93, 90, 90)); */
+            background: #1e2131;
+            background: radial-gradient(#1f60bb 0%, #1e2131 100%, black 10%);
+            /* background: radial-gradient( rgb(243, 243, 21) 2% , rgb(243, 204, 8)20%, rgb(249, 164, 7)50%,rgb(246, 124, 10)100%); */
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 109vw;
+
+        }
+
+        /* .mainCource{
+            margin: 2vw;
+            border: 3px solid gray;
+            height: 95vh;
+        } */
+
+        header {
+            font-size: 2rem;
+            font-weight: bold;
+            color: rgb(255, 0, 0);
+            margin-bottom: 1vw;
+            margin-top: 0%;
+            font-family: 'Playfair Display', serif;
+            text-transform: capitalize;
+            /* font-family: 'Audiowide', cursive; */
+        }
+
+        .main_pic {
+            height: 18vw;
+            width: 30vw;
+            border-bottom-right-radius: 2rem;
+            border-top-left-radius: 3rem;
+            box-shadow: 15px 12px 24px -5px hwb(180 8.6% 90.6%);
+        }
+
+        #image {
+            text-align: center;
+        }
+
+        main {
+            color: white;
+            margin-top: -1vw;
+            padding: 4rem;
+        }
+
+        summary.click {
+            position: relative;
+            left: 31vw;
+            border: 2px solid;
+            padding: 0.5vw;
+            border-radius: 20px;
+            transition: transform .2s;
+        }
+
+        summary.click:hover {
+            box-shadow: 3px 3px 15px white;
+            transform: translateY(-2px);
+        }
+
+
+        .container {
+            margin-top: 2vw;
+            margin-bottom: 2vw;
+        }
+
+        summary::marker {
+            font-size: 2rem;
+        }
+
+        summary {
+            display: inline-block;
+            cursor: pointer;
+            margin-bottom: 2vw;
+        }
+
+        summary h1,
+        h3 {
+            display: inline-block;
+            font-family: 'Amarante', serif;
+        }
+
+        summary h3:hover {
+            text-decoration: underline;
+        }
+
+        p {
+            font-family: 'Alegreya', serif;
+        }
+
+        .location {
+            width: 10rem;
+            height: 10rem;
+            transition: transform .4s;
+            margin-left: 2rem;
+        }
+
+        .location:hover {
+            transform: scale(2);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="mainCource"> -->
+    <header>
+        <center><i>
+                <h1>Glacier National Park</h1>
+            </i></center>
+    </header>
+
+    <div id="image">
+
+        <img class="main_pic" src="PicBox/glacier National park.jpg" alt="" align="center">
+    </div>
+
+    <main>
+        <details>
+
+            <summary class="click">
+                <h1>Click To Know Me Better</h1>
+            </summary>
+            <div class="container">
+                <details>
+                    <summary>
+                        <h3>
+                            My Location
+                        </h3>
+                    </summary>
+                    <p>Glacier National Park is an American national park located in northwestern Montana, on the Canada–United States border,</p>
+
+                    <p> <strong>Location</strong> : Flathead County & Glacier County, Montana, United States </p>
+                    <p> <strong>Nearest city</strong>: 	Columbia Falls, Montana</p>
+                    <p> <strong>Coordinates</strong> : 	48°40′59″N 113°48′01″W</p>
+                    <p> <strong>Area</strong> : 	1,013,322 acres (4,100.77 km2)[1</p>
+                    <p> <img class="location" src="/PicBox/Taj_location.jpg" alt=""></p>
+
+                </details>
+            </div>
+
+            <div class="container">
+                <details>
+                    <summary>
+                        <h3>
+                            What Specialities I have
+                        </h3>
+                    </summary>
+
+                    <p>Glacier National Park is a 1,583-sq.-mi. wilderness area in Montana's Rocky Mountains, with glacier-carved peaks and valleys running to the Canadian border. It's crossed by the mountainous Going-to-the-Sun Road. Among more than 700 miles of hiking trails, it has a route to photogenic Hidden Lake. Other activities include backpacking, cycling and camping. Diverse wildlife ranges from mountain goats to grizzly bears</p>
+                    <p><strong style="font-size: 1rem;">Established:</strong> May 11, 1910 </p>
+                    <p><strong style="font-size: 1rem;">Visitors: </strong>3,081,656 (in 2021)</p>
+
+
+            </div>
+            <div class="container">
+                <details>
+                    <summary>
+                        <h3>Past History</h3>
+                    </summary>
+                    <p> For know deeply visit  <a href="https://en.wikipedia.org/wiki/Glacier_National_Park_(U.S.)" style="text-decoration:none;"> wikipedia</a></p>
+                   
+                </details>
+            </div>
+        </details>
+    </main>
+    <!-- </div> -->
+</body>
+
+</html>

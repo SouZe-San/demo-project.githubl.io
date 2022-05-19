@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aladin&family=Alegreya:ital@0;1&family=Almendra&family=Almendra+SC&family=Amarante&family=Audiowide&family=Playfair+Display:ital@1&family=Poppins:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            margin: 0;
+            /* padding: 0%; */
+            box-sizing: border-box;
+        }
+
+        body {
+            /* background-image: linear-gradient(to right bottom, black, rgb(29, 28, 28), rgba(56, 53, 53, 0.91), rgb(93, 90, 90)); */
+            background: #1e2131;
+            background: radial-gradient(#1f60bb 0%, #1e2131 100%, black 10%);
+            /* background: radial-gradient( rgb(243, 243, 21) 2% , rgb(243, 204, 8)20%, rgb(249, 164, 7)50%,rgb(246, 124, 10)100%); */
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 109vw;
+
+        }
+
+        /* .mainCource{
+            margin: 2vw;
+            border: 3px solid gray;
+            height: 95vh;
+        } */
+
+        header {
+            font-size: 2rem;
+            font-weight: bold;
+            color: rgb(255, 0, 0);
+            margin-bottom: 1vw;
+            margin-top: 0%;
+            font-family: 'Playfair Display', serif;
+            text-transform: capitalize;
+            /* font-family: 'Audiowide', cursive; */
+        }
+
+        .main_pic {
+            height: 18vw;
+            width: 30vw;
+            border-bottom-right-radius: 2rem;
+            border-top-left-radius: 3rem;
+            box-shadow: 15px 12px 24px -5px hwb(180 8.6% 90.6%);
+        }
+
+        #image {
+            text-align: center;
+        }
+
+        main {
+            color: white;
+            margin-top: -1vw;
+            padding: 4rem;
+        }
+
+        summary.click {
+            position: relative;
+            left: 31vw;
+            border: 2px solid;
+            padding: 0.5vw;
+            border-radius: 20px;
+            transition: transform .2s;
+        }
+
+        summary.click:hover {
+            box-shadow: 3px 3px 15px white;
+            transform: translateY(-2px);
+        }
+
+
+        .container {
+            margin-top: 2vw;
+            margin-bottom: 2vw;
+        }
+
+        summary::marker {
+            font-size: 2rem;
+        }
+
+        summary {
+            display: inline-block;
+            cursor: pointer;
+            margin-bottom: 2vw;
+        }
+
+        summary h1,
+        h3 {
+            display: inline-block;
+            font-family: 'Amarante', serif;
+        }
+
+        summary h3:hover {
+            text-decoration: underline;
+        }
+
+        p {
+            font-family: 'Alegreya', serif;
+        }
+
+        .location {
+            width: 10rem;
+            height: 10rem;
+            transition: transform .4s;
+            margin-left: 2rem;
+        }
+
+        .location:hover {
+            transform: scale(2);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="mainCource"> -->
+    <header>
+        <center><i>
+                <h1>Colosseum</h1>
+            </i></center>
+    </header>
+
+    <div id="image">
+
+        <img class="main_pic" src="PicBox/top-attractions-in-the-world-italy-rome-colosseum.jpg" alt="" align="center">
+    </div>
+
+    <main>
+        <details>
+
+            <summary class="click">
+                <h1>Click To Know Me Better</h1>
+            </summary>
+            <div class="container">
+                <details>
+                    <summary>
+                        <h3>
+                            My Location
+                        </h3>
+                    </summary>
+
+                    <p> <strong>City</strong> : Agra, on the banks of river Yamuna. </p>
+                    <p> <strong> State</strong>: Uttar Pradesh</p>
+                    <p> <strong>Distance from Delhi</strong> : 204 Km (approx) </p>
+                    <p> <img class="location" src="/PicBox/Taj_location.jpg" alt=""></p>
+
+                </details>
+            </div>
+
+            <div class="container">
+                <details>
+                    <summary>
+                        <h3>
+                            What Specialities I have
+                        </h3>
+                    </summary>
+
+                    <p>It is a masterpiece of architectural style in conception, treatment and execution and has unique
+                        aesthetic qualities in balance, symmetry and harmonious blending of various elements. Integrity
+                        is maintained in the intactness of tomb, mosque, guest house, main gate and the whole Taj Mahal
+                        complex.</p>
+                    <p><strong style="font-size: 1rem;">Owner:</strong> Shah Jahan </p>
+                    <p><strong style="font-size: 1rem;">Function:</strong> Monument</p>
+
+
+            </div>
+            <div class="container">
+                <details>
+                    <summary>
+                        <h3>Past History</h3>
+                    </summary>
+                    <p> The Taj Mahal (Persian: تاج محل ; /ˌtɑːdʒ məˈhɑːl, ˌtɑːʒ-/; lit. 'Crown of the Palace', [taːdʒ
+                        ˈmɛːɦ(ə)l]),[4][5][6] is an ivory-white marble mausoleum on the right bank of the river Yamuna
+                        in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor Shah Jahan (r.
+                        1628–1658) to house the tomb of his favourite wife, Mumtaz Mahal; it also houses the tomb of
+                        Shah Jahan himself. The tomb is the centrepiece of a 17-hectare (42-acre) complex, which
+                        includes a mosque and a guest house, and is set in formal gardens bounded on three sides by a
+                        crenellated wall.
+
+                        Construction of the mausoleum was essentially completed in 1643, but work continued on other
+                        phases of the project for another 10 years. The Taj Mahal complex is believed to have been
+                        completed in its entirety in 1653 at a cost estimated at the time to be around ₹32 million,
+                        which in 2020 would be approximately ₹70 billion (about US $1 billion). The construction project
+                        employed some 20,000 artisans under the guidance of a board of architects led by the court
+                        architect to the emperor, Ustad Ahmad Lahauri. Various types of symbolism have been employed in
+                        the Taj to reflect natural beauty and divinity.
+
+                        The Taj Mahal was designated as a UNESCO World Heritage Site in 1983 for being "the jewel of
+                        Muslim art in India and one of the universally admired masterpieces of the world's heritage". It
+                        is regarded by many as the best example of Mughal architecture and a symbol of India's rich
+                        history. The Taj Mahal attracts more than 6 million visitors a year[3] and in 2007, it was
+                        declared a winner of the New 7 Wonders of the World (2000–2007) initiative. </p>
+                    <p>
+                        <strong>
+                            <h2 style="margin-left:1rem;">Inspiration :</h2>
+                        </strong>
+
+                        The Taj Mahal was commissioned by Shah Jahan in 1631, to be built in the memory of his wife
+                        Mumtaz Mahal, who died on 17 June that year, while giving birth to their 14th child, Gauhara
+                        Begum.[12][13] Construction started in 1632,[14] and the mausoleum was completed in 1648, while
+                        the surrounding buildings and garden were finished five years later.[15] The imperial court
+                        documenting Shah Jahan's grief after the death of Mumtaz Mahal illustrates the love story held
+                        as the inspiration for the Taj Mahal
+                    </p>
+                </details>
+            </div>
+        </details>
+    </main>
+    <!-- </div> -->
+</body>
+
+</html>
