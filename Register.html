@@ -1,87 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
     <title>Registration page</title>
 </head>
 
- <!-- fistName. last name ,user id
+<!-- fistName. last name ,user id
         password ,confirm pass  
     mail; contact
 \gender Hobbies
 city Review<text Area>
     submit clear-->
-<body>
-    <center><h1 style="border:2px solid black ; width: 20vw;">Login Application</h1></center>
-    <form action="post" action="#" name="logIn">
-<table border="0" cellspacing="5vw" cellpadding="5px" align="center">
-    <tr>
-        <td>
-            <label for="first-name">First Name :</label></td>
-        <td>   <input name="1stname" type="text" maxlength="10" placeholder="First Name" required>
-        </td>
-        <td>
-            <label for="last-name">Last Name :</label></td>
-         <td>  <input name="2ndname" type="text" maxlength="10" placeholder="Last Name" required>
-        </td>
-    </tr>
-    <tr>
-        <td><label for="uN">User Name :</label></td>
-         <td>   <input type="text" name="un" maxlength="10" placeholder="User Name" required>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <label for="Password">Password :</label></td>
-        <td>   <input name="pass" type="password" maxlength="10" placeholder="Password" required>
-        </td>
-        <td>
-            <label for="copas">Confire Password :</label></td>
-          <td> <input name="CoPass" type="text" maxlength="10" placeholder="Confire Password" required>
-        </td>
-    </tr>
 
-</table>
-<br>
-<div class="mail">
-    <label for="mail"> E-mail :</label>
-    <input type="email" name="email" id="" placeholder="E-mail">
-</div><br>
-<div class="contact">
-    <label for="contact">Contact Number :</label>
-    <input type="number" name="contact" id="" maxlength="10" placeholder="Contact Number">
-</div>
-<br>
-<div class="grnder">
-<label for="gender">Gender :: </label>
-<input type="radio" name="gender" id="" value="male"> Male
-<input type="radio" name="gender" id="" value="female"> Female
-<input type="radio" name="gender" id="" value="other"> Other
-</div>
-<br>
-<div class="hobby">
-<label for="hobbi">your Hobby =></label>
-<input type="checkbox" name="singer" id="" value="s">Singing
-<input type="checkbox" name="reader" id="" value="r">Reading
-<input type="checkbox" name="writter" id="" value="w">Writting
-</div><br>
-<div class="cityChoose">
-<label for="city">Choose city</label>
-<select name="city" id="">
-   <option>kollkata</option>
-   <option>Howrha</option>
-   <option>pune</option>
-   <option>Hoggly</option>
-   <option>Nodia</option>
-   <option>darziling</option>
-</select>
-</div><br><br>
-<div class="review">
-<label for="commemts">REVIEW PLS</label>
-<textarea name="" id="" cols="50" rows="5" placeholder="Pls send Feedback"></textarea>
-    </div>   
+<body>
+    <form action="post" action="#" name="logIn">
+    <center>
+        <h1>Login Application</h1>
+    </center>
+    <br>
+   
+<!-- =====================PERSONAL INFO =========================-->
+        <div class="box">
+            <div class="headline">
+                <h3>Personal Details</h3>
+            </div>
+            <div class="container">
+                <div id="f_name">
+                    <label for="first-name">First Name :</label>
+                    <input name="1stname" style="width: 12vw;" type="text" maxlength="10" placeholder="First Name" required>
+                </div>
+
+                <div id="L_name">
+                    <label for="last-name">Last Name :</label>
+                    <input name="2ndname" style="width: 12vw;" type="text" maxlength="10" placeholder="Last Name" required>
+                </div>
+            </div>
+            <div class="container" style="gap: 5.8rem;">
+                <div class="grnder">
+                    <label for="gender">Gender :: </label>
+                    <input type="radio" name="gender" id="" value="male"> Male
+                    <input type="radio" name="gender" id="" value="female"> Female
+                    <input type="radio" name="gender" id="" value="other"> Other
+                </div>
+                <div class="cityChoose">
+                    <label for="city">Choose city :</label>
+                    <select name="city" id="" style="width: 12vw; ">
+                        <option>kollkata</option>
+                        <option>Howrha</option>
+                        <option>pune</option>
+                        <option>Hoggly</option>
+                        <option>Nodia</option>
+                        <option>darziling</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+
+       <!-- ===================CONTACT DETAILS================== -->
+        <div class="box">
+            <div class="headline">
+                <h3>Contact Details</h3>
+            </div>
+        <div class="container">
+            <div class="mail">
+                <label for="mail"> E-mail :</label>
+                <input type="email" style="width: 12vw;" name="email" id="" placeholder="E-mail">
+            </div>
+            <div class="contact">
+                <label for="contact">Contact Number :</label>
+                <input type="text" name="text" id="" style="width: 9vw;" maxlength="10" placeholder="Contact Number">
+            </div>
+        </div>
+    </div>
+
+    <!-- =================== eXTA ===========================-->
+        <div class="box">
+            <div class="headline">
+                <h3>Extra Details</h3>
+            </div>
+            <div class="container">
+            <label for="hobbi">your Hobby : </label>
+            <input type="checkbox" name="singer" id="" value="s">Singing  &NonBreakingSpace;
+            <input type="checkbox" name="reader" id="" value="r">Reading &nbsp;
+            <input type="checkbox" name="writter" id="" value="w">Writting &NoBreak;
+        </div>
+    </div>
+
+    <!-- ===================LOG IN ========================= -->
+        <div class="box">
+            <div class="headline">
+                <h3>Log-In Details</h3>
+            </div>
+            <div class="container">
+                <label for="uN">User Name:</label>
+                <input type="text" style="width: 12vw;" name="un" maxlength="10" placeholder="User Name" required>
+            </div>
+      
+            <div class="pass container">
+                <div class="password">
+                    <label for="Password">Password :</label>
+                    <input name="pass" style="width: 12vw;" type="password" maxlength="10" placeholder="Password" required>
+                </div>
+                <div class="con_password">
+                    <label for="copas">Confire Password :</label>
+                    <input name="CoPass" type="text" maxlength="10" placeholder="Confire Password" required>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- ============ REVIEW ===============-->
+        <div class="box">
+            <div class="container">
+            <label for="commemts">REVIEW PLS :</label>
+            <textarea name="" id="" cols="50" rows="1" placeholder="Pls send Feedback"></textarea>
+        </div>
+        </div>
+<!-- ============================ BUTTON =============== -->
+
+        <div class="box">
+            <input class="btn" type="submit" value="Done">
+
+    <input class="btn" type="reset" value="Reset">
+        </div>
     </form>
 </body>
+
 </html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sigh in</title>
+    <style>
+        * {
+            margin: 0%;
+        }
+
+        main {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .box1 {
+            width: 60%;
+        }
+
+        .box2 {
+            width: 40%;
+            background: #00dc9e;
+        }
+
+        .box1,
+        .box2 {
+            text-align: center;
+            /* margin: 5vw 0; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            /* padding: 0 5vw; */
+            /* width: 100%; */
+
+        }
+
+        .input {
+            outline: none;
+            border: none;
+            background: transparent;
+        }
+
+        .username{
+            margin: 2rem 0;
+        }
+        .password{
+           margin-bottom: 0.8rem;
+        }
+
+        .username,
+        .password {
+            /* border: 2px solid black; */
+            border-radius: 27px;
+            /* margin: 2rem 0; */
+            width: 23vw;
+            text-align: left;
+            padding-left: 12px;
+            height: 6vh;
+            line-height: 6vh;
+            background: #b6afaf57;
+        }
+
+        .btn {
+            margin: 4vw 0.5rem;
+            padding: 3px;
+            border: none;
+            border-radius: 30px;
+            width: 10rem;
+            height: 2rem;
+            cursor: pointer;
+            background: #47ffa9;
+            color: #0c1bf6;
+
+        }
+
+        .btn:hover{
+            opacity: 80%;
+            color: black;
+            font-weight: 800;
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        .part {
+            margin: 0.5rem 0;
+        }
+
+        .head {
+            color: white;
+        }
+
+        .containt {
+            text-align: left;
+        }
+
+        .button {
+            margin: 0 0.5rem;
+            padding: 3px;
+            border: none;
+            border-radius: 30px;
+            width: 10rem;
+            height: 2rem;
+            cursor: pointer;
+            background: #ffffff;
+            color: black;
+            font-weight: bold;
+        }
+
+        .button:hover{
+            /* box-shadow:0px 0px 6px 6px black ; */
+            background-color: rgba(103, 101, 101, 0.817);
+            color: white;
+        }
+
+        .rember {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!--1. Action means where data will go 
+        2. POST means secure & faster
+                GET means unsecure & not slow that much--->
+    <main>
+        <div class="box1">
+            <center>
+                <h1> Login Your Account</h1>
+            </center>
+            <form name="frm1" method="post" action="#">
+                <div class="username">
+                    <input name="name" class="input" type="text" maxlength="10" placeholder="UserName" required>
+                </div>
+                <div class="password">
+                    <input name="passward" class="input" type="password" name="" id="" maxlength="10"
+                        placeholder="password" required>
+                </div>
+                <div class="rember">
+                    <p> <input type="checkbox" name="rememberMe" id="">Remember Me</p>
+                    <p style="cursor:pointer;">Forget Passwor?</p>
+                </div>
+                <div>
+                    <input class="btn" type="submit" value="Sign In">
+
+                </div>
+            </form>
+        </div>
+
+        <div class="box2">
+            <div class="head part">
+                <h1>New Here?</h1>
+            </div>
+            <div class="part containt">
+                <p>
+                    Sign in and discover the feeling of Exploring new things.
+                </p>
+                <p>And be ready to become an Advanturer.</p>
+            </div>
+            <div class="part">
+                <a href="Register.html" style="text-decoration: none;">
+                    <button class="button" type="submit">Sign-In</button>
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
